@@ -86,7 +86,22 @@ class PokedexGoVC : UIViewController, UISearchBarDelegate, UICollectionViewDeleg
     // execute when cell is tapped
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
+        let pokemon = inSearchMode == true ? self.filteredPokemon[indexPath.row]: self.pokemons[indexPath.row]
         
+        //PokemonDetailVC
+        performSegue(withIdentifier: "PokemonDetailVC", sender: pokemon)
+        
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "PokemonDetailVC" {
+            if let detailsVC = segue.destination as? PokemonDetailVC {
+                if let pokemon = sender as? Pokemon {
+                    detailsVC.pokemon = pokemon
+                }
+            }
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

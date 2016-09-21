@@ -19,6 +19,7 @@
 		D55E87311D92F2F500830DC1 /* Pokemon Hollow.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D55E872F1D92F2F500830DC1 /* Pokemon Hollow.ttf */; };
 		D55E87321D92F2F500830DC1 /* Pokemon Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D55E87301D92F2F500830DC1 /* Pokemon Solid.ttf */; };
 		D55E87341D92F64D00830DC1 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = D55E87331D92F64D00830DC1 /* music.mp3 */; };
+		D5CA0EF91D9312230071E00A /* PokemonDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CA0EF81D9312230071E00A /* PokemonDetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		D55E872F1D92F2F500830DC1 /* Pokemon Hollow.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pokemon Hollow.ttf"; sourceTree = "<group>"; };
 		D55E87301D92F2F500830DC1 /* Pokemon Solid.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pokemon Solid.ttf"; sourceTree = "<group>"; };
 		D55E87331D92F64D00830DC1 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
+		D5CA0EF81D9312230071E00A /* PokemonDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokemonDetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				D556A49D1D91AE7B0024E65F /* PokedexGoVC.swift */,
+				D5CA0EF81D9312230071E00A /* PokemonDetailVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 				D55E872A1D92DDFB00830DC1 /* PokeCell.swift in Sources */,
 				D556A49E1D91AE7B0024E65F /* PokedexGoVC.swift in Sources */,
 				D556A49C1D91AE7B0024E65F /* AppDelegate.swift in Sources */,
+				D5CA0EF91D9312230071E00A /* PokemonDetailVC.swift in Sources */,
 				D55E87281D921C7700830DC1 /* Pokemon.swift in Sources */,
 				D55E872D1D92EA8B00830DC1 /* csv.swift in Sources */,
 			);
