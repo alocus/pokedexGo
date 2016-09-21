@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "PokedexGoVC.initAudio() -&gt; ():PokedexGoVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "musicPlayer.isPlaying &#10;//            musicPlayer.stop()&#10;//            sender.alpha = 0.2&#10;//        } else {&#10;//            musicPlayer.play()&#10;//            sender.alpha = 1.0&#10;//        }&#10;">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "PokedexGoVC.musicButtonPressed(AnyObject) -&gt; ():PokedexGoVC.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "sender">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
