@@ -53,7 +53,7 @@
                                     <constraint firstAttribute="trailing" secondItem="2Lv-Z2-MRW" secondAttribute="trailing" constant="8" id="yLd-YO-Gg6"/>
                                 </constraints>
                             </view>
-                            <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="vyX-hN-1rz">
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search Pokemon" translatesAutoresizingMaskIntoConstraints="NO" id="vyX-hN-1rz">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="TXa-Gl-faD"/>
                                 </constraints>

@@ -15,15 +15,20 @@ class PokedexGoVC : UIViewController, UISearchBarDelegate, UICollectionViewDeleg
     @IBOutlet weak var searchBar: UISearchBar!
     
     var pokemons: [Pokemon] = []
+    var filteredPokemon: [Pokemon] = []
     var musicPlayer: AVAudioPlayer!
+    
+    var inSearchMode = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.collection.dataSource = self
         self.collection.delegate = self
-   
         self.searchBar.delegate = self
+        
+        // change search button to done
+        searchBar.returnKeyType = UIReturnKeyType.done
         
         parsePokemonCSV()
         initAudio()
@@ -69,7 +74,7 @@ class PokedexGoVC : UIViewController, UISearchBarDelegate, UICollectionViewDeleg
         // step 1 - dequeue a reusable cell
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PokeCell", for: indexPath) as? PokeCell{
             
-            let pokemon = pokemons[indexPath.row]
+            let pokemon = inSearchMode == true ? self.filteredPokemon[indexPath.row]: self.pokemons[indexPath.row]
             cell.configureCell(pokemon)
             
             return cell
@@ -85,7 +90,7 @@ class PokedexGoVC : UIViewController, UISearchBarDelegate, UICollectionViewDeleg
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return pokemons.count
+        return inSearchMode == true ? self.filteredPokemon.count: self.pokemons.count
     }
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -101,6 +106,25 @@ class PokedexGoVC : UIViewController, UISearchBarDelegate, UICollectionViewDeleg
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        self.view.endEditing(true)
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchText.characters.count > 0 {
+            inSearchMode = true
+            
+            let lower = searchText.lowercased()
+            filteredPokemon = pokemons.filter({$0.name.range(of: lower) != nil})
+            collection.reloadData()
+        } else {
+            inSearchMode = false
+            collection.reloadData()
+            self.view.endEditing(true)
+        }
+    }
+    
     
     
     // turn on/off music and dim the button when off.
