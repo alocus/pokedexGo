@@ -14,6 +14,10 @@ class PokemonDetailVC: UIViewController {
     
     @IBOutlet weak var nameLabel: UILabel!
     
+    @IBAction func backButtonPressed(_ sender: UIButton) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
