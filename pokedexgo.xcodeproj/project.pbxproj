@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		55421BAAE689A9DC311BC14D /* Pods_pokedexgo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD1EF260E34A11063209E703 /* Pods_pokedexgo.framework */; };
+		D50DF4611D9456CF002613D6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50DF4601D9456CF002613D6 /* Constants.swift */; };
 		D556A49C1D91AE7B0024E65F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D556A49B1D91AE7B0024E65F /* AppDelegate.swift */; };
 		D556A49E1D91AE7B0024E65F /* PokedexGoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D556A49D1D91AE7B0024E65F /* PokedexGoVC.swift */; };
 		D556A4A11D91AE7B0024E65F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D556A49F1D91AE7B0024E65F /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		0E94E0763BF97103D57CF035 /* Pods-pokedexgo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pokedexgo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pokedexgo/Pods-pokedexgo.debug.xcconfig"; sourceTree = "<group>"; };
 		9585C96CDCCDB4B9BB9E54A8 /* Pods-pokedexgo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pokedexgo.release.xcconfig"; path = "Pods/Target Support Files/Pods-pokedexgo/Pods-pokedexgo.release.xcconfig"; sourceTree = "<group>"; };
+		D50DF4601D9456CF002613D6 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D556A4981D91AE7B0024E65F /* pokedexgo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pokedexgo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D556A49B1D91AE7B0024E65F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D556A49D1D91AE7B0024E65F /* PokedexGoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexGoVC.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				D55E872C1D92EA8B00830DC1 /* csv.swift */,
+				D50DF4601D9456CF002613D6 /* Constants.swift */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				D556A49E1D91AE7B0024E65F /* PokedexGoVC.swift in Sources */,
 				D556A49C1D91AE7B0024E65F /* AppDelegate.swift in Sources */,
 				D5CA0EF91D9312230071E00A /* PokemonDetailVC.swift in Sources */,
+				D50DF4611D9456CF002613D6 /* Constants.swift in Sources */,
 				D55E87281D921C7700830DC1 /* Pokemon.swift in Sources */,
 				D55E872D1D92EA8B00830DC1 /* csv.swift in Sources */,
 			);
@@ -329,6 +333,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -378,6 +383,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -406,6 +412,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0E94E0763BF97103D57CF035 /* Pods-pokedexgo.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = pokedexgo/Info.plist;
@@ -420,6 +427,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9585C96CDCCDB4B9BB9E54A8 /* Pods-pokedexgo.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = pokedexgo/Info.plist;
