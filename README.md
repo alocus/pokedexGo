@@ -1,14 +1,16 @@
-# pokedexGo
+# PokedexGo
+
+Swift 3, Alamofire - A simple Pokedex fetches REST data from pokeapi.co
+
+## A list of pokemons 
+<img width=350 src="./screenshot/sss1.png">
+
+## Filter 
+<img width=350 src="./screenshot/sss4.png">
+
+## Detail
+<img width=350 src="./screenshot/sss2.png">
 
 
 
 
-
-// Pokemon Spritess
-https://github.com/PokeAPI/pokeapi/tree/master/data/Pokemon_XY_Sprites
-
-// Pokemon data
-https://github.com/PokeAPI/pokeapi/blob/master/data/v1/pokemon.csv
-
-// Pokemon Font 
-http://www.dafont.com/pokemon.font
