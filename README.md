@@ -1,8 +1,6 @@
 # PokedexGo
 
-Swift 3, Alamofire 
-
-### A simple Pokedex fetches REST data from pokeapi.co
+Swift 3, Alamofire - A simple Pokedex fetches REST data from pokeapi.co
 
 ## A list of pokemons 
 <img width=350 src="./screenshot/sss1.png">
