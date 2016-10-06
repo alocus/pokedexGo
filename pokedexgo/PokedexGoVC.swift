@@ -113,7 +113,7 @@ class PokedexGoVC : UIViewController, UISearchBarDelegate, UICollectionViewDeleg
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 105, height: 105)
+        return CGSize(width: 80, height: 80)
     }
     
     
